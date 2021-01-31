@@ -1,0 +1,64 @@
+DATADATADATADATADATADATADATADATADATADATADATADATADATADATADATADATADATADATADATADATADATADATADATADATADATADATADATADATADATADATADATADATADATADATADATADATA
+# what currency is what?
+us_stock is USD
+us_bonds is USD
+as_stock is HKD
+as_bonds is JPY - need currency transfer data
+eu_stock is GBP
+eu_bonds is EUR - need currency transfer data
+bb_comms is USD
+
+got currency transfer data
+
+___________________________________________________________________________________________________________________________________________
+# total data time period after NaNs
+07/03/2000 - 04/30/2020, starts at 3594th observation
+
+___________________________________________________________________________________________________________________________________________
+# in-sample for GARCH estimation
+maybe five years
+
+# so out-of-sample is:
+last 15 years
+
+
+___________________________________________________________________________________________________________________________________________
+# corr analysis
+bottom 5% rets, around mean 5% rets, and top 5% rets, of last 15 years that is
+
+# panel data model:
+divide time period in ten probably. and then calc betas and compare.
+
+
+
+
+
+
+
+
+
+CODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODECODE
+- fit GJR-skewt and calc vf's for all series and pairs
+- calc corrs corresponding to rets
+- index on returns and sort /// might already do that and give summ stats
+- compare corrs using wilcoxon RS test
+
+- divide data set in parts
+- do panel data model
+- compare betas and fixed effects too???
+
+_______________________________________________________________________________________________________________________________________
+
+# make pairs (biv portfolios), denoted as SU.SE, SA.BA etc.
+# define date and muhfuggin retss and individual rets
+#susa
+
+
+# might define summstats like this:
+df = pd.DataFrame({'name': ['Raphael', 'Donatello'],
+                   'mask': ['red', 'purple'],
+                   'weapon': ['sai', 'bo staff']})
+
+and then the strings would be for instance str(np.mean(df['su'])
+would allow for individual min and max as well
+
